@@ -5,7 +5,7 @@ import {Ground} from "./Grounds";
 import {Car} from "./Car";
 import {Rings} from "./Rings";
 import {Boxes} from "./Boxes";
-import {Bloom, ChromaticAberration, EffectComposer} from "@react-three/postprocessing";
+import {Bloom, ChromaticAberration, DepthOfField, EffectComposer} from "@react-three/postprocessing";
 import { BlendFunction } from 'postprocessing';
 
 function CarShow() {
@@ -60,6 +60,12 @@ function CarShow() {
       <Ground/>
 
       <EffectComposer>
+        {/*<DepthOfField*/}
+        {/*  focusDistance={0.0035} // focus distance*/}
+        {/*  focalLength={0.01}*/}
+        {/*  bokehScale={3}*/}
+        {/*  height={480}*/}
+        {/*/>*/}
         <Bloom
           blendFunction={BlendFunction.ADD}
           intensity={0.5} // The bloom intensity
