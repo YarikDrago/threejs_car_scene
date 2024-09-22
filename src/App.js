@@ -7,6 +7,7 @@ import {Rings} from "./Rings";
 import {Boxes} from "./Boxes";
 import {Bloom, ChromaticAberration, DepthOfField, EffectComposer} from "@react-three/postprocessing";
 import { BlendFunction } from 'postprocessing';
+import {FloatingGrid} from "./FloatingGrid";
 
 function CarShow() {
   return (
@@ -30,6 +31,7 @@ function CarShow() {
       </CubeCamera>
       <Rings/>
       <Boxes/>
+      <FloatingGrid/>
 
       {/*
         let spotlight = new SpotLight();
